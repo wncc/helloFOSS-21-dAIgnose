@@ -11,7 +11,7 @@ In this challenge we will ask you to build a model to try and identify which of 
 ### The dataset
 The dataset to be used can be found [here](https://github.com/sartajbhuvaji/brain-tumor-classification-dataset). The training and test images have already been split. The dataset contains MRI scnas of 5 different types. One folder contains scans of helathy people while others contain with 4 different types of brain tumors. Binary as well as multi class classification can be performed using this dataset.
 
-**The code** can be found in the notebook [here](https://github.com/SubarnoNR/Hello-FOSS-Image-Segmentation/blob/main/Brain_Tumour_Classification.ipynb).
+**The code** can be found in the notebook [here](https://github.com/wncc/helloFOSS-21-dAIgnose/blob/main/Brain_Tumour_Classification.ipynb).
 ### Tasks
 
 1) The first task is to load and prepare the dataset for it to be fed into the model during training. You need to modify the dataset by dividing it into tumour and no tumour by combining all the images from different types of tumour into a single tumour folder.  There are many ways to proceed with loading the dataset, out of which 2 have been mentioned in the notebook. You can experiment with data augmentation and batch size to get a better performance. 
@@ -34,12 +34,12 @@ A fully convolution network is a neural network that only performs convolution i
 ### Dataset
 We will be using the LGG MRI Segmentation dataset. The images used in the dataset were obtained from The Cancer Imaging Archive (TCIA).
 They correspond to 110 patients included in The Cancer Genome Atlas (TCGA) lower-grade glioma collection.
-You can find the dataset [here](https://github.com/SubarnoNR/Hello-FOSS-Image-Segmentation/tree/main/Dataset). As you can see there are a 110 folders each containg the MRI scans for that patient. Each patient has a number of MRI scans for different positions and slices. 
+You can find the dataset [here](https://github.com/wncc/helloFOSS-21-dAIgnose/tree/main/Dataset). As you can see there are a 110 folders each containg the MRI scans for that patient. Each patient has a number of MRI scans for different positions and slices. 
 
 ### The Tasks
-1) **The testing metrics**: Right now we are only using binary accuracy as a metric to evaluate the performance of the model which can be very misleading. There are a number of other metrics such as IOU, precision, recall or the confusion matrix which are widely used to judge how are model is doing. Add these metrics in the model as well. You can read about these metrics [here](https://www.kite.com/blog/python/image-segmentation-tutorial/#validation2) if you don't know about them.
+1) **The testing metrics**: Right now we are only using binary accuracy as a metric to evaluate the performance of the model which can be very misleading. There are a number of other metrics such as IOU, precision, recall or the confusion matrix which are widely used to judge how are model is doing. Add these metrics in the model as well. You can read about these metrics from the articles [here](https://www.kaggle.com/yassinealouini/all-the-segmentation-metrics) and [here](https://www.kite.com/blog/python/image-segmentation-tutorial/#validation2) if you don't know about them.
 
-2) **Imporoving model architecture and hyperparameter tuning**: A basic model implemented using this dataset can be found [here](https://www.kaggle.com/yassinealouini/all-the-segmentation-metrics). As you can see even though the binary accuracy looks high but the low iou clearly tells that the model is not at all optimum. Thus add/modify the layers, adjust the hyperparameters and try to improve the model for better IOU. 
+2) **Imporoving model architecture and hyperparameter tuning**: A basic model implemented using this dataset can be found [here](https://github.com/wncc/helloFOSS-21-dAIgnose/blob/main/MRI_segmentation.ipynb). As you can see even though the binary accuracy looks high but the low iou clearly tells that the model is not at all optimum. Thus add/modify the layers, adjust the hyperparameters and try to improve the model for better IOU. 
 
 3) **Data Augmentation**: The dataset can also be modified and improved to better train the model.  Use data augmentation techniques, rotate, translate and warp images to improve the diversity of images being used for training. This will help solve any overfitting issues and help boost up accuracy. You can go through [this](https://nanonets.com/blog/data-augmentation-how-to-use-deep-learning-when-you-have-limited-data-part-2/) to learn about data augmentation. The techniques discussed here are a bit more general but in this project we have used Image Data Generator so you can modify that itself to do data augmentation.
 
