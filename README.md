@@ -26,6 +26,8 @@ The dataset to be used can be found [here](https://github.com/sartajbhuvaji/brai
 
 6) Instead of doing a binary classfication now use the dataset as it is and modify the model architecture to perform multi-class classficiation to identify the type of tumors as well.
 
+## ** Additional Info
+The Brain_Classification_Models folder has a tensorflow model which was trained for multiclass classification of the brain tumor images on the dataset in the <i>"Brain-Tumor-Classification-DataSet"</i> folder. You may use it for further improving the model.
 # 2) Brain Tumor Segmentation 
 After classifiying that whether the patient has a brain tumor or what kind of brain tumor does he have, the next step is to identify the brain tumor from the MRI scan. Now this becomes a semantic image segmentation problem. Image segmentation is a computer vision task in which we label specific regions of an image according to what's being shown. To solve this we will move on from CNNs to FCNs(Fully Convolutional Networks).
 
